@@ -19,9 +19,7 @@ const connect = mongoose.connect(url);
 
 connect.then((db) => {
   console.log('Connected correctly to the server')
-}, (err) => {
-  console.log(err);
-});
+}, (err) => console.log(err));
 
 var app = express();
 
